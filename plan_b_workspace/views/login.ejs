@@ -1,0 +1,25 @@
+<% include ./partials/header.ejs%>
+<link rel="stylesheet" href="/stylesheets/login.css" type="text/css">
+
+<div class="container loginForm">
+    <form action="/login" method="POST">
+        <div class="form-group">
+            <input type="text" name="username" placeholder="Username" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="password" name="password" placeholder ="Password" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="submit" value="login" class="form-control">
+        </div>
+    </form>
+    <div class="container">
+        <p>Don't have accounts?</p>
+        <a href="/register">REGISTER NOW</a>
+    </div>
+</div>
+
+
+
+<% include ./partials/footer.ejs%>
+<script src="/login.js"></script>

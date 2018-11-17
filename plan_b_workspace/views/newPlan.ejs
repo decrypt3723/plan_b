@@ -1,0 +1,19 @@
+<% include ./partials/header.ejs%>
+    <form action="/main" method="POST">
+        <div class="form-group">
+            <label for="inputPlan">계획명</label>
+            <input type="text" class="form-control" name="planName" id="inputPlan" placeholder="Enter plan">
+        </div>
+        <div class="form-group">
+            <label for="startDateInput">언제부터</label>
+            <input type="date" class="form-control" name="planStartDate" id="startDateInput">
+            <label for="finishDateInput">언제까지</label>
+            <input type="date" class="form-control" name="planFinishDate" id="finishDateInput">
+        </div>
+        <div class="form-group">
+            <label class="form-control" for="inputDesc">계획에 관한 간단한 설명</label>
+            <input type="text" class="form-control" name="planDesc" id="inputDesc">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+<% include ./partials/footer.ejs%>

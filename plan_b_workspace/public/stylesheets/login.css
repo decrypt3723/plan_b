@@ -1,0 +1,21 @@
+body{
+    background-color: white;    
+}
+
+.form-group input {
+    width: 96%;
+}
+.container.loginForm {
+    width: 300px;
+    max-width: 35%;
+    margin-top: 50px;
+}
+
+.container .container p {
+    margin-bottom: 0;
+}
+
+.backgroundSkyblue {
+    background-color: skyblue;
+    transition: 300ms;
+}

@@ -1,0 +1,165 @@
+body{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: large;
+  background-color: #93bcd0;
+}
+
+.navbar-brand{
+    font-family: 'Comfortaa', cursive;
+}
+
+.pageToolContainer{
+    display: flex;
+    padding: 0;
+    margin-bottom: 0px;
+    margin-top: 2px;
+    height: 38px;
+}
+
+
+.pageToolContainer .input-group{
+    margin : auto 0;
+    height: 30px;
+}
+
+.plan-container {
+    position: relative;
+    min-height: 400px;
+    padding-bottom: 30px;
+    background-color: #fffffc;
+    margin-bottom: 5px;
+    border-radius: 5px 5px 5px 5px;
+
+}
+
+.plan-container:hover {
+    box-shadow: 3px 3px 6px #353535;
+    transition: 350ms;
+    background-color: #fffad4;
+}
+
+.plan-container .boxHeader{
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+}
+.plan-container .boxName{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #fdfff1;
+    border-bottom: 1px #d2df00 solid;
+}
+.plan-container .boxBody{
+    width: 95%;
+    margin: 0 auto;
+}
+.boxContentInput{
+    padding: 0;
+}
+/*.boxContentInput input{*/
+/*    width: 88%;*/
+/*}*/
+/*.boxContentInput button{*/
+/*    width: 12%;*/
+/*    overflow: hidden;*/
+/*    white-space: nowrap;*/
+/*    text-overflow: ellipsis;*/
+/*    background-color: #3AAFB9;*/
+/*    border: none;*/
+/*    height: 100%;*/
+/*    padding: auto 0;*/
+/*}*/
+#dateBoxContentInput{
+    display: none;
+}
+
+.boxBtnGroup {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.focusBtn{
+    cursor: not-allowed;
+}
+.boxContentContainer{
+    overflow: auto;
+}
+
+/*On Body elements*/
+/*.addBox {*/
+/*    background-color: rgba(34,162,140,.6);*/
+/*    border: none;*/
+/*    vertical-align: middle;*/
+/*}*/
+/*.addBox:hover {*/
+/*    font-size: 1em;*/
+/*    transition: 400ms;*/
+/*}*/
+
+.boxContentContainer .boxText p{
+    display: inline-block;
+    width: 95%;
+    margin-bottom: 0;
+}
+
+.boxContentContainer .boxText .boxTextRemove{
+    display: none;
+}
+
+.boxContentContainer .boxText:hover .boxTextRemove{
+    display: inline-block;
+    color: red;
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+}
+/*Mobile Touch 지원을 위한 class 지정*/
+.boxTextRemoveTouch{
+    display: inline-block;
+    color: red;
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+}
+.boxContentContainer .boxText:hover p{
+    transition: 600ms;
+    padding-left: 4px;
+    border-bottom: 1px solid rgba(220, 220, 220, .4);
+}
+/*Mobile Touch 지원을 위한 class 지정*/
+.boxTextTouch {
+    transition: 600ms;
+    padding-left: 4px;
+    border-bottom: 1px solid rgba(220, 220, 220, .4);
+}
+
+.boxContentContainer p{
+    overflow-x: hidden;
+}
+
+.focusBox{
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    height: 95%;
+}
+
+.notFocused{
+    display: none;
+}
+
+.modalBackground-plan-container{
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+

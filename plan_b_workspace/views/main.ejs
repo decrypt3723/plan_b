@@ -1,0 +1,74 @@
+<% include ./partials/header.ejs%>
+
+              <!-- Plan Adding Modal -->
+                <div class="modal fade" id="removeBoxModal" tabindex="-1" role="dialog" aria-labelledby="removeBoxModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h6 class="modal-title" id="removeBoxModalLabel">소레와 경고데스</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>정말로 삭제할까요?</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger boxRemovingBtn" data-dismiss="modal">넴 ㅋ</button>
+                        <button type="button" class="btn btn-safe" data-dismiss="modal">아니염 ㅋ</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <!-- Plan Adding Modal End -->
+              <!-- Box Content Add Modal -->
+              <div class="modal fade" id="addBoxContentModal" tabindex="-1" role="dialog" aria-labelledby="addBoxContentModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">추가</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div id="addBoxContent">
+                        <button id="switchBoxContentInputBtn">날짜로 변경</button>
+                        <input type="text" id="textBoxContentInput">
+                        <input type="date" id="dateBoxContentInput">
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Box Content Add Modal End -->
+
+<div class="container">
+  <div class="container">
+    <div class="pageToolContainer">
+      <div class="btn-group btn-group-sm">
+        <button class="btn btn-safe mb-1 mt-1" data-toggle="collapse" data-target="#boxInput">박스 추가</button>
+      </div>
+        <div class="container input-group collapse" id="boxInput">
+            <input type="text" class="boxNameInput" placeholder="box name here" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="addBox btn btn-outline-safe" id="button-addon2">ADD BOX</button>
+            </div>
+        </div>
+    </div>  
+  </div>
+  
+        <div class="container">
+          <div class="row boxContainer">
+            
+          </div>
+        </div>
+        
+</div>
+
+<% include ./partials/footer.ejs%>
+<script src="/main.js"></script>
